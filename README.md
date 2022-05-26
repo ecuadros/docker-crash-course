@@ -1,3 +1,9 @@
+cd ..
+docker-compose up
+docker-compose up --build
+docker-compose down
+docker-compose down --rmi all -v
+
 docker build -t myapp:nodemon .
 
 docker run --name myapp_c -d -p 4000:4000 myapp:v1
@@ -13,8 +19,5 @@ docker ps -a
 
 docker system prune
 
-cd ..
-docker-compose up
-docker-compose up --build
-docker-compose down
-docker-compose down --rmi all -v
+# docker-crash-course
+All course files for the Docker Crash Course tutorial on the Net Ninja site &amp; YouTube channel.
